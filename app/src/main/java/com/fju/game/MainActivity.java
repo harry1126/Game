@@ -26,26 +26,32 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.arrow_up).setOnClickListener(this);
         gameView = findViewById(R.id.game);
     }
+
     @Override
     public void onClick(View view) {
         switch(view.getId()){
             case R.id.arrow_up:
                 Log.d(TAG,"onlcick:UP");
+//                gameView.moveUp();
                 gameView.setPosY(gameView.getPosY()-50);
                 gameView.invalidate();
                 break;
             case R.id.arrow_down:
                 Log.d(TAG,"onlcick:DOWN");
+//                gameView.moveDown();
                 gameView.setPosY(gameView.getPosY()+50);
                 gameView.invalidate();
                 break;
             case R.id.arrow_left:
                 Log.d(TAG,"onlcick:LEFT");
+//                Log.d(TAG,"onclick:x"+gameView.getPosX());
+//                gameView.moveLeft();
                 gameView.setPosX(gameView.getPosX()-50);
                 gameView.invalidate();
                 break;
             case R.id.arrow_right:
                 Log.d(TAG,"onlcick:RIGHT");
+//                gameView.moveRight();
                 gameView.setPosX(gameView.getPosX()+50);
                 gameView.invalidate();
                 break;

@@ -12,7 +12,7 @@ import android.view.View;
 import androidx.annotation.Nullable;
 
 public class GameView extends View {
-    float posX, posY = 300;
+    float posX, posY = 400;
     private Bitmap bitmap;
 
 
@@ -30,8 +30,32 @@ public class GameView extends View {
 //        for(int i=0;i<getHeight()-bitmap.getHeight();i+=50){
 //            canvas.drawBitmap(bitmap,400,300+i,paint);
 //        }
-
     }
+//    public void moveLeft(){
+//        if(posX>50){
+//            posX = posX-50;
+//            invalidate();
+//        }
+//    }
+//    public void moveRight(){
+//        if(posX<getWidth()-bitmap.getWidth()){
+//            posX+=50;
+//            invalidate();
+//        }
+//    }
+//    public void moveUp(){
+//        if(posY>50){
+//            posY-=50;
+//            invalidate();
+//        }
+//    }
+//    public void moveDown(){
+//        if(posY<getHeight()-bitmap.getHeight()){
+//            posY+=50;
+//            invalidate();
+//        }
+//    }
+
     public float getPosX() {
         return posX;
     }
